@@ -9,7 +9,8 @@ public class GsonDatabaseClient {
 		try{
 			// creamos la cadena de mando:
 			ActiveIngredients AI = new ActiveIngredients(null);
-			Medicine M = new Medicine(AI);
+			Inhalers I = new Inhalers(AI);
+			Medicine M = new Medicine(I);
 			MedicinePresentations MP = new MedicinePresentations(M);
 			Phisioterapies P = new Phisioterapies(MP);
 			Posologies Po = new Posologies(P);

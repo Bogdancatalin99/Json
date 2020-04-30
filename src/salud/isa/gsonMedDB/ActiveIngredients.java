@@ -6,7 +6,7 @@ import com.google.gson.stream.JsonReader;
 
 public class ActiveIngredients extends CDM{
 
-	private static final String ACTINGREF_FIELD_TAGNAME = "activeIngRef";
+	private static final String ACTINGREF_FIELD_TAGNAME = "activeIngredients";
 	private static final String NAME_FIELD_TAGNAME = "name";
 
 	public ActiveIngredients(CDM s) {

@@ -6,7 +6,7 @@ import com.google.gson.stream.JsonReader;
 
 public class Phisioterapies extends CDM{
 
-	private static final String PHYSIOTHERAPIES_TAGNAME = "phisiotherapies";
+	private static final String PHYSIOTHERAPIES_TAGNAME = "physiotherapies";
 	private static final String NAME_FIELD_TAGNAME = "name";
 	private static final String IMAGE_FIELD_TAGNAME = "image";
 	private static final String FIELD_SEP = "name";

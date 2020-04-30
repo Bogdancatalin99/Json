@@ -39,7 +39,7 @@ public class Inhalers extends CDM{
 		String inha_name = null;
 		String inha_ima = null;
 		while(reader.hasNext()) {
-			String name = reader.nextString();
+			String name = reader.nextName();
 			if(name.equals(NAME_FIELD_TAGNAME)) {
 				inha_name = reader.nextString();
 			}
