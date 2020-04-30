@@ -16,14 +16,14 @@ public class Inhalers extends CDM{
 
 	}
 
-	public StringBuffer readCategory(JsonReader reader, String name) 
+	public StringBuffer readCat(JsonReader reader, String name) 
 			throws IOException {
 		if(name.equals(INHALERS_TAGNAME)) {
 			return super.everyPart(reader, name);
 		}
 		else {
 			if(next != null) {
-				return super.readCategory(reader, name);
+				return super.readCat(reader, name);
 			}
 			else {
 				reader.skipValue();

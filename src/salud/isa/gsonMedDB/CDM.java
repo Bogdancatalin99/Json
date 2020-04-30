@@ -11,9 +11,9 @@ public abstract class CDM {
 		next = n;
 	}
 
-	public StringBuffer readCategory(JsonReader reader, String name)
+	public StringBuffer readCat(JsonReader reader, String name)
 			throws IOException{
-		return next.readCategory(reader, name);
+		return next.readCat(reader, name);
 	}
 
 	public StringBuffer everyPart(JsonReader reader, String name)

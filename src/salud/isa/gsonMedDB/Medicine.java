@@ -14,7 +14,7 @@ public class Medicine extends CDM{
 	}
 
 	//Leemos el fichero .json 
-	public StringBuffer readCategory(JsonReader reader, String name) 
+	public StringBuffer readCat(JsonReader reader, String name) 
 			throws IOException{
 		// si el nombre que le pasamos al buffer es igual que el de la categoria devolvemos los nombres encontrados
 		if(name.equals(MEDICINES_TAGNAME)) {
@@ -23,7 +23,7 @@ public class Medicine extends CDM{
 		else {
 			// si el valor es null significa que ya hemos recorrigo el array y devolvemos los valores leidos
 			if(next != null) {
-				return super.readCategory(reader, name);
+				return super.readCat(reader, name);
 
 			}
 			// si leemos una categoria incorrecta para la variable MEDICINES_TAGNAME devolvemos un error

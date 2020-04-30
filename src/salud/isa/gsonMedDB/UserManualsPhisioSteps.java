@@ -17,13 +17,13 @@ public class UserManualsPhisioSteps extends CDM{
 		super(s);
 	}
 
-	public StringBuffer readCategory(JsonReader reader, String name) throws IOException {
+	public StringBuffer readCat(JsonReader reader, String name) throws IOException {
 		if (name.equals(USERMANUALPHISIOSTEPS_TAGNAME)) {
 			return super.everyPart(reader, name);
 		}
 		else {
 			if (next != null) {
-				return super.readCategory(reader, name);
+				return super.readCat(reader, name);
 			} else {
 				reader.skipValue();
 				System.err.println("La categoria: '" + name + "' es incorrecta.");

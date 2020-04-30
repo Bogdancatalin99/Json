@@ -15,14 +15,14 @@ public class Phisioterapies extends CDM{
 		super(s);
 	}
 
-	public StringBuffer readCategory(JsonReader reader, String name)
+	public StringBuffer readCat(JsonReader reader, String name)
 			throws IOException{
 		if(name.equals(PHYSIOTHERAPIES_TAGNAME)) {
 			return super.everyPart(reader, name);
 		}
 		else {
 			if(next != null) {
-				return super.readCategory(reader, name);
+				return super.readCat(reader, name);
 			}
 			else {
 				reader.skipValue();
